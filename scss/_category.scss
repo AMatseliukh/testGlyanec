@@ -21,6 +21,7 @@
 }
 .category__elem-link{
   border-bottom: 3px solid transparent;
+  cursor: pointer;
   &::before {
     position: absolute;
     font-size: 100px;
