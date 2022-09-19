@@ -1,0 +1,186 @@
+.footer {
+  position: relative;
+  background-color: #fff;
+  padding-top: 100px;
+}
+.footer__inner {
+  display: flex;
+  align-items: center;
+  a{
+    color: #fff;
+  }
+}
+.footer__inner-content {
+  max-width: 831px;
+  background-color: $text-color;
+  color: #fff;
+  padding: 50px 56px 13px 50px;
+  display: grid;
+  grid-template-columns: 154px 221px 1fr;
+  grid-template-rows: 125px 1fr 70px;
+  opacity: 0.9;
+  position: relative;
+  z-index: 4;
+  margin-top: 10px;
+
+}
+.footer-content__logo {
+  display: flex;
+  align-items: flex-start;
+  color: #fff;
+  grid-column: 1 / -1;
+  .logo__text {
+    color: #fff;
+  }
+}
+.footer-menu__list>li, .footer-goods__list>li {
+  position: relative;
+  padding-left: 20px;
+  &:not(:last-child){
+    margin-bottom: 15px;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    background-color: $active-color;
+    height: 2px;
+    width: 15px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &:hover{
+    .footer-menu__link, .footer-goods__link {
+      color: $active-color;
+    }
+    &::before{
+      background-color: #fff;
+    }
+  }
+}
+.footer-menu__link, .footer-goods__link {
+  color: $active-color;
+  .footer-menu__list>li::before, .footer-goods__list>li::before{
+    background-color: #fff;
+  }
+}
+.footer-info__map{
+  margin-bottom: 15px;
+  display: flex;
+  span{
+    margin-left: 5px;
+    font-size: 18px;
+    line-height: 1.25;
+  }
+  &:hover{
+    color: $active-color;
+  }
+}  
+.footer-info__worktime{
+  margin-bottom: 15px;
+  display: flex;
+  span{
+    margin-left: 5px;
+    font-size: 18px;
+    line-height: 1.25;
+  }
+}
+._icon-map-pin, ._icon-calendar {
+  font-size: 24px;
+  color: #fff;
+}
+.footer-info__phone {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-left: 29px;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    background-image: url(./../images/icons/smartphone-f.svg);
+    width: 24px;
+    height: 24px;
+    left: -29px;
+    top: 0;
+  }
+  a{
+    margin-bottom: 5px;
+    &:hover{
+      color: $active-color;
+    }
+  }
+  &:hover::before{
+    background-image: url(./../images/icons/smartphone-act.svg);
+  }
+}
+.footer-social__desc {
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+._icon-Instagram, 
+._icon-Facebook,
+._icon-Telegram{
+  font-size: 40px;
+  &:hover{
+    color: $active-color;
+  }
+}
+.footer-content__copy {
+  grid-column: 1 / 3;
+  align-self: end;
+}
+.footer-content__company {
+  grid-column: 3 / 4;
+  align-self: end;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.25;
+  margin-left: 24px;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/icons/glyanec.svg);
+    width: 21px;
+    height: 20px;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);    
+  }
+}
+.footer__upbutton{
+  display: inline-block;
+  text-align: center;
+  line-height: 60px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: -9px;
+  left: 36px;
+  color: #fff;
+  background-color: $active-color;
+  img{
+    height: 20px;
+  }
+  &:hover{
+    background-color: #ccc;
+    img path{
+      fill: $active-color;
+    }
+  }
+}
+.footer__inner-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 520px;
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+}

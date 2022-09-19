@@ -1,0 +1,27 @@
+.main-slider-slide {
+  position: relative;
+}
+
+.main-slider__content {
+  max-width: 462px;
+  position: absolute;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 100px;
+  top: 0;
+  left: 50px;
+}
+
+.slider-content__title {
+  margin-bottom: 50px;
+}
+
+.slider-content__name {
+  margin-bottom: 10px;
+}
+
+.slider-content____desc {
+  margin-bottom: 30px;
+  max-width: 331px;
+}
+/*# sourceMappingURL=main-slider.css.map */

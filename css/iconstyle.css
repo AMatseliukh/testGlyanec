@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('../fonts/icons.eot?ae9kwh');
+  src:  url('../fonts/icons.eot?ae9kwh#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?ae9kwh') format('truetype'),
+    url('../fonts/icons.woff?ae9kwh') format('woff'),
+    url('../fonts/icons.svg?ae9kwh#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before, [class*=" _icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-smartphone-header:before {
+  content: "\e915";
+}
+._icon-smartfone:before {
+  content: "\e914";
+}
+._icon-arrow-up:before {
+  content: "\e913";
+}
+._icon-armchair-1:before {
+  content: "\e900";
+}
+._icon-Arrow-Left:before {
+  content: "\e901";
+}
+._icon-Arrow-Right:before {
+  content: "\e902";
+}
+._icon-bedroom-1:before {
+  content: "\e903";
+}
+._icon-calendar:before {
+  content: "\e904";
+}
+._icon-chevron-right:before {
+  content: "\e905";
+}
+._icon-Facebook:before {
+  content: "\e906";
+}
+._icon-Instagram:before {
+  content: "\e907";
+}
+._icon-kitchen-1:before {
+  content: "\e908";
+}
+._icon-Left:before {
+  content: "\e909";
+}
+._icon-living-room-1:before {
+  content: "\e90a";
+}
+._icon-map-pin:before {
+  content: "\e90b";
+}
+._icon-Right:before {
+  content: "\e90c";
+}
+._icon-shopping-cart-head:before {
+  content: "\e90d";
+}
+._icon-smartphone-head:before {
+  content: "\e90e";
+}
+._icon-Telegram:before {
+  content: "\e90f";
+}
+._icon-Vector:before {
+  content: "\e910";
+}
+._icon-wardrobe-1:before {
+  content: "\e911";
+}
+._icon-wardrobe-1-1:before {
+  content: "\e912";
+}

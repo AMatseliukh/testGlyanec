@@ -1,0 +1,237 @@
+.header{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.header__wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 1920px;
+  // height: 165px;
+  background-color: rgba(255, 255, 255, 0.9);
+  max-height: 600px;
+  padding-bottom: 65px;
+  z-index: 50;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.header__top-social {
+  display: flex;
+  align-items: center;
+}
+.header-social {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-right: 60px;
+}
+.header-social__title {
+  text-transform: none;
+}
+.header-social__block{
+  display: flex;
+  justify-content: center;
+}
+.header-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition: background-color 0.3s;
+  color: $text-color;
+  &:not(:last-child){
+    margin-right: 5px;
+  }
+  &:hover{
+    background-color: #a0aec0;
+    // filter: grayscale(50%);
+  }
+}
+
+.header-phone {
+  display: block;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    background: url(../images/icons/smartphone-header.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../images/icons/chevron-right.svg);
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    pointer-events: none;
+  }
+}
+.header-phone__value {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  padding: 10px 24px 10px 5px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  option {
+    color: $text-color;
+    &:active{
+      background-color: $active-color;
+    }
+  }
+}
+.header-phone:hover{
+  outline: none;
+  color: $active-color;
+  .header-phone__value {
+    color: $active-color;
+  }
+  &::after{
+    background-image: url(../images/icons/chevron-right-active.svg);
+  }
+  &::before{
+    background-image: url(../images/icons/smartphone-header-active.svg);
+  }
+}
+
+
+.menu-header__list {
+  display: flex;
+  >li {
+    padding: 5px 0 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+    &:not(:last-child){
+      margin-right: 15px;
+    }
+    &:hover{
+      border-bottom: 2px solid $active-color;
+      .menu-header__link{
+        color: $active-color;
+      }
+    }
+  }
+}
+.menu-header__link {
+  color: $text-color;
+}
+.menu-header__burger{
+  display: none;
+}
+
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 105px;
+}
+
+.goods__menu {
+  position: relative;
+}
+.goods-menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goods-menu__list>li{
+  padding: 0 20px 0 0;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  &:not(:last-child){
+    margin-right: 15px;
+  } 
+  &:hover{
+    border-bottom: 2px solid $active-color;
+    .goods-menu__link {
+      color: $active-color;
+    }
+  }
+}
+.goods-menu__link {
+  color: $text-color;
+}
+._icon-chevron-right::before{
+  position: absolute;
+  font-size: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.goods-menu__title{
+  display: none;
+}
+.header__bottom-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__img {
+  margin-right: 15px;
+}
+.logo__text {
+  color: $text-color;
+  &::first-letter{
+    color: $active-color;
+  }
+}
+.header__bottom-buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy-header__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+  cursor: pointer;
+  &:hover{
+    color: $active-color;
+  }
+}
+._icon-shopping-cart-head{
+  font-size: 30px;
+  color: $text-color;
+}
+.buy-header__card-title {
+  margin-left: 5px;
+}
+.buy-header__call-link {
+  color: #fff;
+}
+
+.buy-header__call-new{
+  display: none;
+}
+.header__call{
+  display: flex;
+}
